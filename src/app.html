@@ -1,6 +1,9 @@
 <template>
   <require from="bootstrap/css/bootstrap.css"></require>
-  <div class="page-host">
-    <router-view></router-view>
+  <require from="layout/sidebar.html"></require>
+  <div id="wrapper">
+    <sidebar></sidebar>
+
+    <router-view id="main-content"></router-view>
   </div>
 </template>

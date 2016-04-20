@@ -108,3 +108,67 @@ section.au-enter-active {
     opacity: 1;
   }
 }
+
+@font-face {
+  /*
+  Credit:
+  http://www.dafont.com/a-dripping-marker.font
+  */
+  font-family: adrip1;
+  src: url('/fonts/adrip1.ttf');
+}
+
+
+
+
+body {
+  background: #C5C5C5;
+}
+
+#wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 960px;
+  height: 100vh;
+}
+
+#wrapper sidebar {
+  flex: 1 20%;
+  padding-top: 40px;
+  background: black;
+}
+
+#wrapper sidebar h1:before {
+  content: '';
+  display: block;
+  height: 120px;
+  background: url('/images/raccoon.png') top center no-repeat;
+  background-size: 80% auto;
+}
+
+#wrapper sidebar h1 {
+  font-family: adrip1;
+  color: #E1E1E1;
+  text-align: center;
+}
+
+#wrapper sidebar .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+
+#wrapper sidebar .menu ul li a {
+  display: block;
+  padding-left: 3.6em;
+  padding-bottom: 1em;
+  font-family: monospace;
+  font-size: 1.1em;
+  color: #C9C9C9;
+}
+
+#wrapper #main-content {
+  flex: 1 70%;
+  padding-top: 40px;
+}
